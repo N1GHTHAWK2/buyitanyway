@@ -1,0 +1,13 @@
+
+{
+  "name": "buyitanyway",
+  "version": "1.0.0",
+  "description": "BuyItAnyway product review app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
