@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logitech MX Master 3S Review</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 60px 20px;
+        background: #f9f9f9;
+        max-width: 700px;
+        margin: auto;
+        color: #333;
+      }
+      h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: #0070f3;
+        text-decoration: none;
+      }
+      .back:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>🖱 Logitech MX Master 3S Review</h1>
+    <p>
+      The Logitech MX Master 3S is the productivity mouse of choice for designers, developers, and power users. Its ergonomic design, smooth scrolling, and customizable buttons make it perfect for multitasking and deep work.
+    </p>
+    <p>
+      ✅ Pros: Super comfortable, precise, silent click, and works on any surface.<br />
+      ⚠️ Cons: Premium price tag and might be overkill for casual users.
+    </p>
+    <p>
+      ⭐ Final Verdict: 9.5/10 – A must-have for productivity enthusiasts.
+    </p>
+  </body>
+</html>
