@@ -7,26 +7,48 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 60px 20px;
+      margin: 0;
+      padding: 0;
       background: #fdfcfa;
       color: #222;
-      max-width: 900px;
-      margin: 0 auto;
     }
 
     nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e2e2;
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .logo {
+    .nav-left a {
       font-size: 1.5rem;
       font-weight: bold;
       color: #0056D2;
       text-decoration: none;
+    }
+
+    .nav-right a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0056D2;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .nav-right a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
     }
 
     h1 {
@@ -51,7 +73,7 @@
       background: white;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
       text-align: left;
     }
 
@@ -82,43 +104,49 @@
 </head>
 <body>
   <nav>
-    <a href="index.html" class="logo">🚀 BuyItAnyway</a>
+    <div class="nav-left">
+      <a href="index.html">🚀 BuyItAnyway</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+    </div>
   </nav>
 
-  <h1>Welcome to BuyItAnyway</h1>
-  <p>Where impulse meets insight — honest product reviews designed to help you pull the trigger and never look back.</p>
+  <div class="container">
+    <h1>Welcome to BuyItAnyway</h1>
+    <p>Where impulse meets insight — honest product reviews designed to help you pull the trigger and never look back.</p>
 
-  <div class="products">
-    <div class="product-card">
-      <h3>🖱️ Logitech MX Master 3S</h3>
-      <p>A game-changing productivity mouse for creatives and coders.</p>
-      <a href="Logitech.html">Read Review →</a>
-    </div>
+    <div class="products">
+      <div class="product-card">
+        <h3>🖱️ Logitech MX Master 3S</h3>
+        <p>A game-changing productivity mouse for creatives and coders.</p>
+        <a href="Logitech.html">Read Review →</a>
+      </div>
 
-    <div class="product-card">
-      <h3>🎧 AirPods Pro 2</h3>
-      <p>Incredible noise cancellation and seamless iOS integration.</p>
-      <a href="Airpods.html">Read Review →</a>
-    </div>
+      <div class="product-card">
+        <h3>🎧 AirPods Pro 2</h3>
+        <p>Incredible noise cancellation and seamless iOS integration.</p>
+        <a href="Airpods.html">Read Review →</a>
+      </div>
 
-    <div class="product-card">
-      <h3>🪵 Grovemade Desk Shelf</h3>
-      <p>Turns any workspace into an elegant productivity station.</p>
-      <a href="Grovemade.html">Read Review →</a>
-    </div>
+      <div class="product-card">
+        <h3>🪵 Grovemade Desk Shelf</h3>
+        <p>Turns any workspace into an elegant productivity station.</p>
+        <a href="Grovemade.html">Read Review →</a>
+      </div>
 
-    <div class="product-card">
-      <h3>💡 Philips Hue Smart Lights</h3>
-      <p>Set the perfect vibe with voice-controlled color lighting.</p>
-      <a href="Phillips.html">Read Review →</a>
-    </div>
+      <div class="product-card">
+        <h3>💡 Philips Hue Smart Lights</h3>
+        <p>Set the perfect vibe with voice-controlled color lighting.</p>
+        <a href="Phillips.html">Read Review →</a>
+      </div>
 
-    <div class="product-card">
-      <h3>🎓 MasterClass Membership</h3>
-      <p>Learn from legends. For real. Writing, cooking, business & more.</p>
-      <a href="Masterclass.html">Read Review →</a>
+      <div class="product-card">
+        <h3>🎓 MasterClass Membership</h3>
+        <p>Learn from legends. For real. Writing, cooking, business & more.</p>
+        <a href="Masterclass.html">Read Review →</a>
+      </div>
     </div>
   </div>
 </body>
 </html>
-
