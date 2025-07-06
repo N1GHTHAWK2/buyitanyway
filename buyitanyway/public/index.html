@@ -7,14 +7,31 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 80px 20px;
+      margin: 0;
+      padding: 0;
       background: #f4f4f4;
+    }
+
+    nav {
+      background: #fff;
+      padding: 15px 30px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      margin-left: 15px;
     }
 
     h1 {
       color: #333;
       font-size: 2.5em;
+      margin-top: 60px;
+      text-align: center;
     }
 
     p {
@@ -22,10 +39,11 @@
       font-size: 1.2em;
       max-width: 600px;
       margin: 20px auto;
+      text-align: center;
     }
 
     .products {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     .product-card {
@@ -46,3 +64,60 @@
     .product-card a {
       color: #0070f3;
       text-decoration: none;
+    }
+
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div style="font-weight: bold; font-size: 1.4em;">BuyItAnyway</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <h1>🚀 Welcome to BuyItAnyway!</h1>
+  <p>Home of the internet’s boldest review-driven product marketplace.<br>Discover. Decide. Buy it anyway.</p>
+  <p>💡 More features launching soon. Stay tuned!</p>
+
+  <div class="products" id="reviews">
+    <h2 style="text-align:center;">🔥 Top Picks</h2>
+
+    <div class="product-card">
+      <h3>🖱️ Logitech MX Master 3</h3>
+      <p>A game-changing productivity mouse for creatives and coders.</p>
+      <a href="Logitech.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h3>🎧 AirPods Pro 2</h3>
+      <p>Incredible noise cancellation and seamless iOS integration.</p>
+      <a href="Airpods.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h3>🪵 Grovemade Desk Shelf</h3>
+      <p>Turns any workspace into an elegant productivity station.</p>
+      <a href="Grovemade.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h3>💡 Philips Hue Smart Lights</h3>
+      <p>Set the perfect vibe with voice-controlled color lighting.</p>
+      <a href="Phillips.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h3>🎓 MasterClass Membership</h3>
+      <p>Learn from legends. For real. Writing, cooking, business & more.</p>
+      <a href="Masterclass.html">Read Review →</a>
+    </div>
+  </div>
+</body>
+</html>
