@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logitech MX Master 3S Review</title>
+  <title>BuyItAnyway</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
+      color: #333;
       margin: 0;
       padding: 0;
-      color: #333;
     }
 
     nav {
-      background: #fff;
+      background: #ffffff;
       padding: 20px 40px;
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .logo {
+    nav .logo {
       font-size: 1.6rem;
-      font-weight: bold;
+      font-weight: 700;
       color: #0056D2;
       text-decoration: none;
     }
@@ -42,56 +45,86 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
-    h2 {
+    p.subtitle {
       font-size: 1.2rem;
       color: #666;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    p {
-      line-height: 1.7;
-      margin-bottom: 20px;
+    .products {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    a.button {
+    .product-card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .product-card h3 {
+      margin-top: 0;
+    }
+
+    .product-card p {
+      color: #555;
+    }
+
+    .product-card a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #0056D2;
-      color: white;
+      margin-top: 15px;
+      color: #0056D2;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
     }
 
-    a.button:hover {
-      background-color: #003c9e;
+    .product-card a:hover {
+      text-decoration: underline;
     }
 
-    footer {
+    #contact {
+      background: #f9f9f9;
+      padding: 60px 20px;
       text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 40px;
+    }
+
+    #contact input,
+    #contact textarea {
+      padding: 10px;
+      width: 250px;
+      max-width: 90%;
+      margin-bottom: 10px;
+    }
+
+    #contact button {
+      padding: 10px 20px;
+      background-color: #0056D2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #0041a8;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html" class="logo">🚀 BuyItAnyway</a>
+    <a class="logo" href="index.html">🚀 BuyItAnyway</a>
     <div class="nav-right">
       <a href="index.html" class="nav-link">Home</a>
       <a href="#contact" class="nav-link">Contact</a>
@@ -99,29 +132,54 @@
   </nav>
 
   <div class="container">
-    <h1>Logitech MX Master 3S</h1>
-    <h2>🔥 The ultimate mouse for productivity and comfort</h2>
-
-    <p>
-      The Logitech MX Master 3S is not just a mouse — it's an extension of your workflow. Designed for creators and coders, this premium device offers ultra-precise tracking, quiet clicks, and an ergonomic shape that fits perfectly in your hand for hours of uninterrupted productivity.
+    <h1>Welcome to BuyItAnyway</h1>
+    <p class="subtitle">
+      Where impulse meets insight — honest product reviews designed to help
+      you pull the trigger and never look back.
     </p>
 
-    <p>
-      It features the MagSpeed scroll wheel, which is not only silent but can fly through 1,000 lines per second. With custom gesture controls and multi-device support, it’s ideal whether you’re designing, editing, or deep in code.
-    </p>
+    <div class="products">
+      <div class="product-card">
+        <h3>🖱️ Logitech MX Master 3S</h3>
+        <p>A game-changing productivity mouse for creatives and coders.</p>
+        <a href="Logitech.html">Read Review →</a>
+      </div>
 
-    <p>
-      The battery life is a standout — lasting up to 70 days on a full charge, and a quick 1-minute charge gives you 3 hours of use. Combine that with Logitech Options+ software and you’ve got a mouse that adapts to your habits.
-    </p>
+      <div class="product-card">
+        <h3>🎧 AirPods Pro 2</h3>
+        <p>Incredible noise cancellation and seamless iOS integration.</p>
+        <a href="Airpods.html">Read Review →</a>
+      </div>
 
-    <a href="https://www.logitech.com/en-us/products/mice/mx-master-3s.910-006556.html" target="_blank" class="button">Visit Logitech</a>
-    <br />
-    <a href="index.html" class="button" style="background:#ccc; color:#333; margin-top:15px;">⬅ Back to Homepage</a>
+      <div class="product-card">
+        <h3>🪵 Grovemade Desk Shelf</h3>
+        <p>Turns any workspace into an elegant productivity station.</p>
+        <a href="Grovemade.html">Read Review →</a>
+      </div>
+
+      <div class="product-card">
+        <h3>💡 Philips Hue Smart Lights</h3>
+        <p>Set the perfect vibe with voice-controlled color lighting.</p>
+        <a href="Phillips.html">Read Review →</a>
+      </div>
+
+      <div class="product-card">
+        <h3>🎓 MasterClass Membership</h3>
+        <p>Learn from legends. For real. Writing, cooking, business & more.</p>
+        <a href="Masterclass.html">Read Review →</a>
+      </div>
+    </div>
   </div>
 
-  <footer>
-    &copy; 2025 BuyItAnyway. All rights reserved.
-  </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a product you want us to review? Got questions? Reach out!</p>
+    <form>
+      <input type="email" placeholder="Your email" required /><br />
+      <textarea placeholder="Your message" rows="4" required></textarea><br />
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
-
