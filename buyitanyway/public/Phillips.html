@@ -6,60 +6,122 @@
   <title>Philips Hue Smart Lights Review</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfcfa;
-      color: #222;
-      padding: 40px;
-      max-width: 800px;
-      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
+
     nav {
+      background: #fff;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
     }
-    nav .logo {
-      font-size: 1.4rem;
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #0056D2;
+      text-decoration: none;
+    }
+
+    .nav-right .nav-link {
+      margin-left: 20px;
+      font-size: 1rem;
       font-weight: 600;
       color: #0056D2;
       text-decoration: none;
     }
+
+    .nav-right .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
+
     h2 {
-      font-size: 1.4rem;
-      color: #0056D2;
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
     }
+
     p {
-      font-size: 1.1rem;
       line-height: 1.7;
-      margin: 16px 0;
+      margin-bottom: 20px;
     }
+
     a.button {
       display: inline-block;
       margin-top: 20px;
-      background: #0056D2;
+      padding: 12px 25px;
+      background-color: #0056D2;
       color: white;
-      padding: 10px 20px;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 5px;
       font-weight: bold;
+    }
+
+    a.button:hover {
+      background-color: #003c9e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html" class="logo">🚀 BuyItAnyway</a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
   </nav>
 
-  <h1>Philips Hue Smart Lights</h1>
-  <h2>Color, Control, and Convenience</h2>
-  <p>Philips Hue brings color and mood to your home with smart lighting you can control via app or voice. Whether you’re setting the tone for a movie night or waking up gently, Hue’s rich ecosystem supports it all.</p>
-  <p><strong>Pros:</strong> Endless color choices, automation options, voice assistant support.</p>
-  <p><strong>Cons:</strong> Requires a hub for full features, not the cheapest option.</p>
+  <div class="container">
+    <h1>Philips Hue Smart Lights</h1>
+    <h2>💡 Light up your life, one vibe at a time</h2>
 
-  <a href="index.html" class="button">← Back to Homepage</a>
+    <p>
+      Philips Hue brings rich color and control to your smart home. Set the mood with millions of shades, automate your lighting, and control everything with your voice or your phone — it’s the lighting upgrade you never knew you needed.
+    </p>
+
+    <p>
+      The ecosystem is expansive, with options for bulbs, light strips, outdoor lighting, and more. While it works best with a Hue Bridge, newer Bluetooth models work right out of the box for smaller setups.
+    </p>
+
+    <p>
+      Whether you want calming tones in your bedroom or RGB brilliance for your gaming cave, Hue delivers unmatched customization, reliability, and polish.
+    </p>
+
+    <a href="https://www.philips-hue.com/en-us" target="_blank" class="button">Visit Philips Hue</a>
+    <br />
+    <a href="index.html" class="button" style="background:#ccc; color:#333; margin-top:15px;">⬅ Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 BuyItAnyway. All rights reserved.
+  </footer>
 </body>
 </html>
+
