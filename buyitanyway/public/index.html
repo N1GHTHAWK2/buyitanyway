@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BuyItAnyway</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
       margin: 0;
       padding: 0;
-      background: #fdfcfa;
-      color: #222;
     }
 
     nav {
       background: #ffffff;
-      border-bottom: 1px solid #e2e2e2;
-      padding: 15px 30px;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -25,96 +25,118 @@
       z-index: 1000;
     }
 
-    .nav-left a {
-      font-size: 1.5rem;
-      font-weight: bold;
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
       color: #0056D2;
       text-decoration: none;
     }
 
-    .nav-right a {
+    .nav-right .nav-link {
+      margin-left: 20px;
       font-size: 1rem;
       font-weight: 600;
       color: #0056D2;
-      margin-left: 20px;
       text-decoration: none;
     }
 
-    .nav-right a:hover {
+    .nav-right .nav-link:hover {
       text-decoration: underline;
     }
 
     .container {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
       text-align: center;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
     }
 
-    p {
-      color: #444;
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 40px;
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
     }
 
     .products {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .product-card {
       background: white;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       text-align: left;
     }
 
     .product-card h3 {
-      margin: 0 0 10px;
+      margin-top: 0;
     }
 
     .product-card p {
-      margin: 0 0 15px;
+      color: #555;
     }
 
     .product-card a {
+      display: inline-block;
+      margin-top: 15px;
       color: #0056D2;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
     }
 
     .product-card a:hover {
       text-decoration: underline;
     }
 
-    @media (min-width: 600px) {
-      .products {
-        flex-direction: column;
-      }
+    #contact {
+      background: #f9f9f9;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #contact input,
+    #contact textarea {
+      padding: 10px;
+      width: 250px;
+      max-width: 90%;
+      margin-bottom: 10px;
+    }
+
+    #contact button {
+      padding: 10px 20px;
+      background-color: #0056D2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #contact button:hover {
+      background-color: #0041a8;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="nav-left">
-      <a href="index.html">🚀 BuyItAnyway</a>
-    </div>
+    <a class="logo" href="index.html">🚀 BuyItAnyway</a>
     <div class="nav-right">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
   </nav>
 
   <div class="container">
     <h1>Welcome to BuyItAnyway</h1>
-    <p>Where impulse meets insight — honest product reviews designed to help you pull the trigger and never look back.</p>
+    <p class="subtitle">
+      Where impulse meets insight — honest product reviews designed to help
+      you pull the trigger and never look back.
+    </p>
 
     <div class="products">
       <div class="product-card">
@@ -148,5 +170,16 @@
       </div>
     </div>
   </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a product you want us to review? Got questions? Reach out!</p>
+    <form>
+      <input type="email" placeholder="Your email" required /><br />
+      <textarea placeholder="Your message" rows="4" required></textarea><br />
+      <button type="submit">Send</button>
+    </form>
+  </section>
 </body>
 </html>
