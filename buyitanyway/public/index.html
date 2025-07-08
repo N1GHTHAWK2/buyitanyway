@@ -2,184 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BuyItAnyway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BuyItAnyway – Discover & Review Unique Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     nav {
-      background: #ffffff;
+      background-color: #ffffff;
       padding: 20px 40px;
-      border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      border-bottom: 1px solid #ddd;
     }
 
-    nav .logo {
+    .logo {
       font-size: 1.6rem;
-      font-weight: 700;
+      font-weight: bold;
       color: #0056D2;
       text-decoration: none;
     }
 
-    .nav-right .nav-link {
-      margin-left: 20px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #0056D2;
+    .nav-right a {
+      margin-left: 25px;
       text-decoration: none;
+      color: #0056D2;
+      font-weight: 500;
     }
 
-    .nav-right .nav-link:hover {
-      text-decoration: underline;
-    }
-
-    .container {
+    .hero {
       text-align: center;
-      padding: 60px 20px;
+      padding: 80px 20px 40px;
     }
 
-    h1 {
+    .hero h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
-    p.subtitle {
+    .hero p {
       font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 40px;
-    }
-
-    .products {
-      max-width: 800px;
+      color: #555;
+      max-width: 700px;
       margin: 0 auto;
     }
 
-    .product-card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      text-align: left;
+    .products {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 20px 60px;
     }
 
-    .product-card h3 {
-      margin-top: 0;
+    .product-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .product-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #222;
     }
 
     .product-card p {
       color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
     }
 
     .product-card a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #0056D2;
       text-decoration: none;
+      background-color: #0056D2;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 5px;
+      display: inline-block;
       font-weight: bold;
     }
 
     .product-card a:hover {
-      text-decoration: underline;
+      background-color: #003d99;
     }
 
-    #contact {
-      background: #f9f9f9;
-      padding: 60px 20px;
+    footer {
       text-align: center;
-    }
-
-    #contact input,
-    #contact textarea {
-      padding: 10px;
-      width: 250px;
-      max-width: 90%;
-      margin-bottom: 10px;
-    }
-
-    #contact button {
-      padding: 10px 20px;
-      background-color: #0056D2;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    #contact button:hover {
-      background-color: #0041a8;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 30px 20px;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
+
   <nav>
-    <a class="logo" href="index.html">🚀 BuyItAnyway</a>
+    <a href="index.html" class="logo">🚀 BuyItAnyway</a>
     <div class="nav-right">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
-  <div class="container">
-    <h1>Welcome to BuyItAnyway</h1>
-    <p class="subtitle">
-      Where impulse meets insight — honest product reviews designed to help
-      you pull the trigger and never look back.
-    </p>
-
-    <div class="products">
-      <div class="product-card">
-        <h3>🖱️ Logitech MX Master 3S</h3>
-        <p>A game-changing productivity mouse for creatives and coders.</p>
-        <a href="Logitech.html">Read Review →</a>
-      </div>
-
-      <div class="product-card">
-        <h3>🎧 AirPods Pro 2</h3>
-        <p>Incredible noise cancellation and seamless iOS integration.</p>
-        <a href="Airpods.html">Read Review →</a>
-      </div>
-
-      <div class="product-card">
-        <h3>🪵 Grovemade Desk Shelf</h3>
-        <p>Turns any workspace into an elegant productivity station.</p>
-        <a href="Grovemade.html">Read Review →</a>
-      </div>
-
-      <div class="product-card">
-        <h3>💡 Philips Hue Smart Lights</h3>
-        <p>Set the perfect vibe with voice-controlled color lighting.</p>
-        <a href="Phillips.html">Read Review →</a>
-      </div>
-
-      <div class="product-card">
-        <h3>🎓 MasterClass Membership</h3>
-        <p>Learn from legends. For real. Writing, cooking, business & more.</p>
-        <a href="Masterclass.html">Read Review →</a>
-      </div>
-    </div>
+  <div class="hero">
+    <h1>Discover Reviews That Make You Buy It Anyway</h1>
+    <p>We test and review the coolest, most useful, and most overlooked products online. Only the best make the list.</p>
   </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have a product you want us to review? Got questions? Reach out!</p>
-    <form>
-      <input type="email" placeholder="Your email" required /><br />
-      <textarea placeholder="Your message" rows="4" required></textarea><br />
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <div class="products">
+
+    <div class="product-card">
+      <h2>🔋 Anker Portable Charger</h2>
+      <p>Ultra-fast power on the go. Reliable, compact, and travel-approved.</p>
+      <a href="Anker.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h2>🛏️ Manta Sleep Mask</h2>
+      <p>100% blackout, insanely comfortable, and adjustable for deep rest.</p>
+      <a href="Manta.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h2>💻 Grovemade Desk Shelf</h2>
+      <p>Where design meets productivity — a desk upgrade worth the splurge.</p>
+      <a href="Grovemade.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h2>🚪 DoorDash DashPass</h2>
+      <p>Unlimited free delivery, exclusive deals, and big-time food savings.</p>
+      <a href="Dashpass.html">Read Review →</a>
+    </div>
+
+    <div class="product-card">
+      <h2>🎓 MasterClass Membership</h2>
+      <p>Learn from legends — all in one place. Netflix for education.</p>
+      <a href="Masterclass.html">Read Review →</a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 BuyItAnyway. All rights reserved.
+  </footer>
+
 </body>
 </html>
