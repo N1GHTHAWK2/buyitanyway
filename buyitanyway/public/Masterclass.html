@@ -6,60 +6,122 @@
   <title>MasterClass Membership Review</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfcfa;
-      color: #222;
-      padding: 40px;
-      max-width: 800px;
-      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
+
     nav {
+      background: #fff;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ddd;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      margin-bottom: 30px;
     }
-    nav .logo {
-      font-size: 1.4rem;
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #0056D2;
+      text-decoration: none;
+    }
+
+    .nav-right .nav-link {
+      margin-left: 20px;
+      font-size: 1rem;
       font-weight: 600;
       color: #0056D2;
       text-decoration: none;
     }
+
+    .nav-right .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
+
     h2 {
-      font-size: 1.4rem;
-      color: #0056D2;
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
     }
+
     p {
-      font-size: 1.1rem;
       line-height: 1.7;
-      margin: 16px 0;
+      margin-bottom: 20px;
     }
+
     a.button {
       display: inline-block;
       margin-top: 20px;
-      background: #0056D2;
+      padding: 12px 25px;
+      background-color: #0056D2;
       color: white;
-      padding: 10px 20px;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 5px;
       font-weight: bold;
+    }
+
+    a.button:hover {
+      background-color: #003c9e;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html" class="logo">🚀 BuyItAnyway</a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
   </nav>
 
-  <h1>MasterClass Membership</h1>
-  <h2>Learn From the World's Greatest</h2>
-  <p>MasterClass brings you expert-led video lessons from icons like Serena Williams, Gordon Ramsay, and Neil Gaiman. Courses are beautifully shot and packed with real, actionable knowledge in business, storytelling, creativity, and more.</p>
-  <p><strong>Pros:</strong> World-class instructors, cinematic production, wide variety of topics.</p>
-  <p><strong>Cons:</strong> Requires subscription, no downloadable materials.</p>
+  <div class="container">
+    <h1>MasterClass Membership</h1>
+    <h2>🎓 Learn from legends — all in one place</h2>
 
-  <a href="index.html" class="button">← Back to Homepage</a>
+    <p>
+      MasterClass brings the world’s best minds to your screen — from Gordon Ramsay teaching cooking, to Malcolm Gladwell on writing, and Serena Williams on tennis. It’s like a TED Talk on steroids, with real tactical advice and cinematic production.
+    </p>
+
+    <p>
+      The membership gives you access to hundreds of courses across categories like business, creativity, wellness, and leadership — all taught by leaders who’ve actually done it.
+    </p>
+
+    <p>
+      Whether you’re looking to sharpen a skill or explore a passion, MasterClass makes elite education accessible and inspiring. The only downside? You’ll want to binge every class like a Netflix series.
+    </p>
+
+    <a href="https://www.masterclass.com/" target="_blank" class="button">Visit MasterClass</a>
+    <br />
+    <a href="index.html" class="button" style="background:#ccc; color:#333; margin-top:15px;">⬅ Back to Homepage</a>
+  </div>
+
+  <footer>
+    &copy; 2025 BuyItAnyway. All rights reserved.
+  </footer>
 </body>
 </html>
+
